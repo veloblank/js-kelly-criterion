@@ -12,7 +12,7 @@ Using the Kelly Criterion is known to minimize the risk of ruin, yet still maxim
 
 where:
 
-### &#402;\* is the fraction of the banroll to wager
+### &#402;\* is the fraction of the bankroll to wager
 
 ### b is the net odds received on the wager
 
