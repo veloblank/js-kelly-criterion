@@ -25,3 +25,19 @@
 #home-decimal-odds {
   display: inline;
 }
+
+#home-win-probability {
+  display: inline;
+}
+
+#away-win-probability {
+  display: inline;
+}
+
+.probabilities {
+  padding-bottom: 5px;
+}
+
+#calculate {
+  margin: 5px;
+}
