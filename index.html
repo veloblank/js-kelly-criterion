@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Kelly Criterion Calculator</title>
+</head>
+
+<body>
+  <div id="container">
+    <form>
+      <div id="bankroll">
+        <input id="bankroll-input" type="text" name="bankroll" placeholder="Bankroll Amount">
+      </div>
+
+      <div class="odds">
+        <div id="home-decimal-odds">
+          <input id="home-decimal-odds-input" type="text" name="home-decimal-odds"
+            placeholder="Decimal Odds of Home Side">
+        </div>
+
+        <div id="away-decimal-odds">
+          <input id="away-decimal-odds-input" type="text" name="away-decimal-odds"
+            placeholder="Decimal Odds of Away Side">
+        </div>
+      </div>
+
+      <button id="calculate">Calculate</button>
+    </form>
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
