@@ -1,0 +1,27 @@
+#container {
+  text-align: center;
+  width: 80%;
+  background-color: red;
+}
+
+#bankroll {
+  background-color: black;
+  margin: 0px 25px 5px 25px;
+}
+
+#bankroll-input {
+  padding: 5px;
+  margin: 5px;
+}
+
+.odds {
+  padding-bottom: 5px;
+}
+
+#away-decimal-odds {
+  display: inline;
+}
+
+#home-decimal-odds {
+  display: inline;
+}
