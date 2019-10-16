@@ -13,36 +13,48 @@
   <div id="container">
     <form>
       <div id="bankroll">
-        <input id="bankroll-input" type="text" name="bankroll" placeholder="Bankroll Amount">
+        <input id="bankroll-input" type="number" name="bankroll" placeholder="Bankroll Amount">
       </div>
 
       <div class="odds">
         <div id="home-decimal-odds">
-          <input id="home-decimal-odds-input" type="text" name="home-decimal-odds"
+          <input id="home-decimal-odds-input" type="number" name="home-decimal-odds"
             placeholder="Decimal Odds of Home Side">
         </div>
 
         <div id="away-decimal-odds">
-          <input id="away-decimal-odds-input" type="text" name="away-decimal-odds"
+          <input id="away-decimal-odds-input" type="number" name="away-decimal-odds"
             placeholder="Decimal Odds of Away Side">
         </div>
       </div>
 
       <div class="probabilities">
-        <div id="home-win-probability">
-          <input type="text" id="home-win-probability-input" name="home-win-probability"
-            placeholder="Home Win Probability">
+        <div class="home-win-probability">
+          Home Win Probability
+          <div id="home-probability-results"></div>
+          <div class="slidecontainer">
+            <input type="range" min="0" max="100" value="50" class="slider" id="myHomeRange">
+          </div>
         </div>
 
-        <div id="away-win-probability">
-          <input type="text" id="away-win-probability-input" name="away-win-probability"
-            placeholder="Away Win Probability">
+
+        <div class="away-win-probability">
+          Away Win Probability
+          <div id="away-probability-results">50</div>
+
         </div>
+
+
       </div>
 
+      <input type="reset"></input>
       <button id="calculate">Calculate</button>
     </form>
 
+  </div>
+
+  <div id="results">
+    Bet:
   </div>
 
 
