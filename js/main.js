@@ -6,6 +6,7 @@ homeOutput.innerHTML = slider.value;
 slider.oninput = function() {
 	homeOutput.innerHTML = this.value;
 	awayOutput.innerHTML = 100 - this.value;
+	calculateBet();
 };
 
 // $('input[name="home-win-probability"]').on("input", function(e) {
