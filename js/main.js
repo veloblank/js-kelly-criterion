@@ -17,10 +17,10 @@ slider.oninput = function() {
 // 	$("#home-win-probability-input").val(homeProbability);
 // });
 
-$("button").on("click", function(e) {
-	e.preventDefault();
-	calculateBet();
-});
+// $("button").on("click", function(e) {
+// 	e.preventDefault();
+// 	calculateBet();
+// });
 
 function calculateBet() {
 	let homeProbability =
