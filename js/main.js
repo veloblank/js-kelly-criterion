@@ -9,19 +9,6 @@ slider.oninput = function() {
 	calculateBet();
 };
 
-// $('input[name="home-win-probability"]').on("input", function(e) {
-// 	let awayProbability;
-// 	let homeProbability = parseFloat(e.target.value) / 100;
-// 	awayProbability = 1 - homeProbability;
-// 	$("#away-win-probability-input").val(awayProbability);
-// 	$("#home-win-probability-input").val(homeProbability);
-// });
-
-// $("button").on("click", function(e) {
-// 	e.preventDefault();
-// 	calculateBet();
-// });
-
 function calculateBet() {
 	let homeProbability =
 		parseFloat(
@@ -31,12 +18,21 @@ function calculateBet() {
 		parseFloat(
 			document.getElementById("away-probability-results").textContent
 		) / 100;
-	let homeOdds = $('input[name="home-decimal-odds"]')[0].valueAsNumber;
-	let awayOdds = $('input[name="away-decimal-odds"]')[0].valueAsNumber;
-	let percentOfBankrollOnHome =
+	let homeOdds = $('input[name="win-decimal-odds"]')[0].valueAsNumber;
+	let awayOdds = $('input[name="loss-decimal-odds"]')[0].valueAsNumber;
+	let percentOfBankrollOnFave =
 		((homeOdds - 1) * homeProbability - awayProbability) / (homeOdds - 1);
 
-	recommendation(percentOfBankrollOnHome);
+	if (percentOfBankrollOnFave >= 0) {
+		recommendation(percentOfBankrollOnFave);
+		document.getElementById("results").classList.add("place-bet");
+		document.getElementById("results").classList.remove("no-bet");
+	}
+
+	if (percentOfBankrollOnFave < 0) {
+		document.getElementById("results").classList.add("no-bet");
+		document.getElementById("results").classList.remove("place-bet");
+	}
 }
 
 function recommendation(arg) {
