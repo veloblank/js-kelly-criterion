@@ -22,7 +22,6 @@ $("button").on("click", function(e) {
 });
 
 function calculateBet() {
-	let bankroll = $('input[name="bankroll"]')[0].valueAsNumber;
 	let homeProbability =
 		parseFloat(
 			document.getElementById("home-probability-results").textContent
@@ -40,7 +39,12 @@ function calculateBet() {
 }
 
 function recommendation(arg) {
-	let bet = arg.toFixed(2) * 100;
-	let betString = bet + "%";
-	let results = (document.getElementById("results").innerHTML = betString);
+	let bankroll = $('input[name="bankroll"]')[0].valueAsNumber;
+	let bet = arg.toFixed(2);
+	let betAmount = "$" + bankroll * bet;
+	let betString = bet * 100 + "%";
+	let amount = (document.getElementById("amount").innerHTML =
+		"Bet " + betString);
+	let percent = (document.getElementById("percent").innerHTML =
+		"or " + betAmount);
 }
