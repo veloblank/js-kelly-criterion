@@ -17,20 +17,20 @@
       </div>
 
       <div class="odds">
-        <div id="home-decimal-odds">
-          <input id="home-decimal-odds-input" type="number" value="2.00" name="home-decimal-odds"
-            placeholder="Decimal Odds of Home Side">
+        <div id="win-decimal-odds">
+          <input id="win-decimal-odds-input" type="number" value="2.00" name="win-decimal-odds"
+            placeholder="Decimal Odds of Favorite">
         </div>
 
-        <div id="away-decimal-odds">
-          <input id="away-decimal-odds-input" type="number" value="2.00" name="away-decimal-odds"
-            placeholder="Decimal Odds of Away Side">
+        <div id="loss-decimal-odds">
+          <input id="loss-decimal-odds-input" type="number" value="2.00" name="loss-decimal-odds"
+            placeholder="Decimal Odds of Underdog">
         </div>
       </div>
 
       <div class="probabilities">
-        <div class="home-win-probability">
-          Home Win Probability
+        <div class="fave-decimal-odds">
+          Favorite Win Probability
           <div id="home-probability-results"></div>
           <div class="slidecontainer">
             <input type="range" min="0" max="100" value="50" class="slider" id="myHomeRange">
@@ -38,24 +38,21 @@
         </div>
 
 
-        <div class="away-win-probability">
-          Away Win Probability
+        <div class="dog-decimal-odds">
+          Underdog Win Probability
           <div id="away-probability-results">50</div>
 
         </div>
 
-        <!-- TODO change 'home' and 'away' attributes to 'win' and 'loss' -->
         <!-- TODO show other bet-sizing options '1/4 Kelly' etc. -->
 
 
       </div>
 
-      <!-- <input type="reset"></input> -->
-      <!-- <button id="calculate">Calculate</button> -->
     </form>
 
     <div id="results">
-      <span id="amount"></span> <span id="percent"></span>
+      On Favorite: <span id="amount"></span> <span id="percent"></span>
     </div>
   </div>
 
