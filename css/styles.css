@@ -17,19 +17,19 @@
   padding-bottom: 5px;
 }
 
-#away-decimal-odds {
+#loss-decimal-odds {
   display: inline;
 }
 
-#home-decimal-odds {
+#win-decimal-odds {
   display: inline;
 }
 
-#home-win-probability {
+#fave-decimal-odds {
   display: inline;
 }
 
-#away-win-probability {
+#dog-decimal-odds {
   display: inline;
 }
 
@@ -40,12 +40,6 @@
 #calculate {
   margin: 5px;
 }
-
-/* input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-} */
 
 .slidecontainer {
   width: 100%;
@@ -104,10 +98,19 @@ input[type=number]::-webkit-outer-spin-button {
   /* Cursor on hover */
 }
 
-#results {
+.place-bet {
   margin-top: 5px;
-  background-color: #4CAF50;
   color: white;
+  background-color: #4CAF50;
   text-align: center;
   font-weight: 700;
+}
+
+.no-bet {
+  margin-top: 5px;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  font-weight: 700;
+
 }
